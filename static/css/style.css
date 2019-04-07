@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: slategray;
+    color: whitesmoke;
+    padding: 0.4rem;
+}
+
+form {
+    display: inline-block;
+}
+
+a {
+    color: whitesmoke;
+}
+
+input[type = submit] {
+    color: orange;
+    border: 1px solid black;
+}

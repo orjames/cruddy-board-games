@@ -1,0 +1,10 @@
+<% include ../partials/header.ejs %>
+
+<form method='POST' action="/games">
+    <input type="text" name='name' placeholder='game name'>
+    <input type="text" name='description' placeholder='game description'>
+    <input type="number" name='players'>
+    <input type="submit">
+</form>
+
+<% include ../partials/footer.ejs %>

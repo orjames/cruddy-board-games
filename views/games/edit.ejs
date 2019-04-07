@@ -1,0 +1,13 @@
+<% include ../partials/header.ejs %>
+
+<form id='editform' method='POST' action="/games/<%= game.id %>/?_method=PUT">
+    <input type="text" name='name' value='<%= game.name %>'>
+    <!-- <input type="text" name='description' value='<%= game.description %>'> -->
+    <textarea name='description' form='editform'><%= game.description %></textarea>
+    <input type="number" name='players' value='<%= game.players %>'>
+    <input type="submit" value='update'>
+</form>
+
+<a href="/games">back</a>
+
+<% include ../partials/footer.ejs %>
